@@ -28,10 +28,10 @@ public:
 
 	friend void to_json(nlohmann::json& j, const Task& task);
 	friend void from_json(const nlohmann::json& j, Task& task);
-private:
-	size_t taskID;
+private:	
 	std::string text;
-	Status status;
+	size_t taskID;
+	Status status;	
 };
 
 void to_json(nlohmann::json& j, const Task& task);
